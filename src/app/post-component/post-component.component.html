@@ -1,0 +1,8 @@
+<!-- post-component.component.html -->
+<form class="post" (ngSubmit)="handleSubmit()">
+    <input type="text" placeholder="Title..." name="title" [(ngModel)]="data.title" >
+
+    <textarea name="body" placeholder="Body..."  cols="30" rows="10" [(ngModel)]="data.body"></textarea>
+
+    <button type="submit">Post</button>
+</form>
